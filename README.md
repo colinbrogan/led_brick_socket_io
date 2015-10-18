@@ -5,8 +5,8 @@ For playing a tetris game on the RMM LEDMatrix screen, controlled by any web-ena
 Dependencies:
 ```
 sudo apt-get install libevent-dev
-pip install pyramid gevent gevent-socketio gevent-subprocess
-pip install pyramid_socketio
+sudo pip install pyramid gevent gevent-socketio gevent-subprocess
+sudo pip install pyramid_socketio
 ```
 
 Setup:
