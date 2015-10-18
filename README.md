@@ -1,6 +1,6 @@
 # led_brick_socket_io
 
-For playing a tetris game on the RMM LEDMatrix screen.
+For playing a tetris game on the RMM LEDMatrix screen, controlled by any web-enabled device (laptop, smart phone, etc.) on the RMM network.
 
 Dependencies:
 ```
