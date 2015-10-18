@@ -17,5 +17,7 @@ python setup.py develop
 
 
 Commands to start it running:
-```cd led_brick_socket_io```
-```pserve --reload development.ini```
+```
+cd led_brick_socket_io
+pserve --reload development.ini
+```
