@@ -48,9 +48,10 @@ class LEDBrickNamespace(BaseNamespace):
 			frame.putpixel((int(x), int(y)), color)
 	def on_fbegin(self, data):
 		global frame
-		frame = Image.new('RGB', SIZE, (255,255,255))
+		frame = Image.new('RGB', SIZE, (0,0,0))
 		print "fbegin", data
 	def on_fend(self, data):
+		global frame
 		global lm
 		lm.put(frame)
 		print "fend", data

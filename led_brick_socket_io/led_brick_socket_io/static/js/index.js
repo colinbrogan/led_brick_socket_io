@@ -461,11 +461,11 @@ function writeShade(x,y,tileClass) {
   $(makeCoordinates(x,y)).addClass(tileClass);
   var color = "#ffffff";
   if(tileClass == "shape-shade") {
-    color = "#000000";
-  } else if(tileClass == "plat-shade") {
-    color = "#888888";
-  } else if(tileClass == "plat-remove") {
     color = "#FF0000";
+  } else if(tileClass == "plat-shade") {
+    color = "#0000FF";
+  } else if(tileClass == "plat-remove") {
+    color = "#00FF00";
   }
   socket.emit('wpixel',{x:x, y:y, color:color});
 }
