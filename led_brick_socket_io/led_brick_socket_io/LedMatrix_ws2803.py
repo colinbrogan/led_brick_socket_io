@@ -7,7 +7,7 @@ from RMM_SPI import SPI, SPI_MODE_0, SPI_NO_CS
 class LedMatrix:
 	def __init__(self, size = (29, 6), spi = None, clock = 12*1000*1000):
 		self.spi = spi if spi is not None else SPI()
-		self.spi.mode = SPI_MODE_0 | SPI_NO_CS
+		self.spi.mode = SPI_MODE_0
 		self.spi.bpw = 8
 		self.spi.speed_hz = clock
 		self.reftime = time()

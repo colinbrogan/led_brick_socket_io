@@ -4,6 +4,7 @@ README.txt
 development.ini
 production.ini
 setup.py
+led_brick_socket_io/LedMatrix_pygame.py
 led_brick_socket_io/__init__.py
 led_brick_socket_io/tests.py
 led_brick_socket_io/views.py
