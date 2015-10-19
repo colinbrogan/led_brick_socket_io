@@ -11,10 +11,10 @@ import os
 
 # if os.access("/dev/spidev1.0", os.R_OK|os.W_OK):
 #	from LedMatrix_ws2803 import LedMatrix
-	#from LedMatrix_n5110 import LedMatrix
+# from LedMatrix_n5110 import LedMatrix
 # else:
-	from LedMatrix_pygame import LedMatrix
-	#from LedMatrix_ascii import LedMatrix
+from LedMatrix_pygame import LedMatrix
+#from LedMatrix_ascii import LedMatrix
 
 
 SIZE = (29, 6)
