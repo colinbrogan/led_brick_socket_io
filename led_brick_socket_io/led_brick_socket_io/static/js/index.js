@@ -467,6 +467,7 @@ function writeShade(x,y,tileClass) {
   } else if(tileClass == "plat-remove") {
     color = "#00FF00";
   }
+  // Test
   socket.emit('wpixel',{x:x, y:y, color:color});
 }
 
