@@ -459,7 +459,7 @@ function down() {
 
 function writeShade(x,y,tileClass) {
   $(makeCoordinates(x,y)).addClass(tileClass);
-  var color = "#ffffff";
+  var color = "#000000";
   if(tileClass == "shape-shade") {
     color = "#FF0000";
   } else if(tileClass == "plat-shade") {
@@ -476,7 +476,7 @@ function removeShades(tileClass) {
       $(this).removeClass(tileClass);
       var id = $(this).attr("id");
       var coordinates = deriveCoordinates(id);
-      socket.emit('wpixel',{ x:coordinates['x'], y:coordinates['y'], color:"#ffffff" });
+      socket.emit('wpixel',{ x:coordinates['x'], y:coordinates['y'], color:"#000000" });
     }
   });
 }
