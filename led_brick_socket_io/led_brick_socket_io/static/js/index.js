@@ -403,29 +403,57 @@ $(document).ready(function() {
   $(window).unbind("keydown");
   $(window).on("keydown",function(event) { 
     if(event.keyCode == 37) {
-      frameEvent();
+      left();
     } else if (event.keyCode == 38) {
-      socket.emit('fbegin',fnum);
-      Shape.moveUp();
-      Shape.writeShades();
-      Platform.writeShades();
-      socket.emit('fend',fnum);
-      fnum+=1;
+      up();
     } else if (event.keyCode == 39) {
-      socket.emit('fbegin',fnum);
-      Shape.turn();
-      Shape.writeShades();
-      Platform.writeShades();
-      socket.emit('fend',fnum);
+      right();
     } else if (event.keyCode == 40) {
-      socket.emit('fbegin',fnum);
-      Shape.moveDown();
-      Shape.writeShades();
-      Platform.writeShades();
-      socket.emit('fend',fnum);
+      down();
     }
   });
+  $("#up").click(function(event) {
+    up();
+  });
+  $("#left").click(function(event) {
+    left();
+  });
+  $("#right").click(function(event) {
+    right();
+  });
+  $("#down").click(function(event) {
+    down();
+  });
 });
+
+function left() {
+  frameEvent();
+}
+
+function up() {
+  socket.emit('fbegin',fnum);
+  Shape.moveUp();
+  Shape.writeShades();
+  Platform.writeShades();
+  socket.emit('fend',fnum);
+  fnum+=1;
+}
+
+function right() {
+  socket.emit('fbegin',fnum);
+  Shape.turn();
+  Shape.writeShades();
+  Platform.writeShades();
+  socket.emit('fend',fnum);
+}
+
+function down() {
+  socket.emit('fbegin',fnum);
+  Shape.moveDown();
+  Shape.writeShades();
+  Platform.writeShades();
+  socket.emit('fend',fnum);
+}
 
 // utility
 

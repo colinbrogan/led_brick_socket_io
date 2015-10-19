@@ -33,3 +33,43 @@
 .game-over {
   border-color: red !important;
 }
+
+body {
+    text-align: center;
+}
+
+div#controls {
+    margin-top: 2rem;
+}
+
+div#up {
+    display: inline-block;
+    border: 1.5rem solid transparent;
+    border-bottom: 2rem solid grey;
+    border-top: 0px;
+}
+
+div#left {
+    clear:both;
+    display: inline-block;
+    border: 1.5rem solid transparent;
+    border-right: 2rem solid grey;
+    border-left: 0rem;
+    margin-right: 3rem;
+}
+
+div#right {
+    clear:both;
+    display: inline-block;
+    border: 1.5rem solid transparent;
+    border-left: 2rem solid grey;
+    border-right: 0rem;
+}
+
+div#down {
+    clear:both;
+    display: inline-block;
+    border: 1.5rem solid transparent;
+    border-top: 2rem solid grey;
+    border-bottom: 0rem;
+}

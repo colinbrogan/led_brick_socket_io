@@ -16,6 +16,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.17/socket.io.js"></script>
     <script src="${request.static_url('led_brick_socket_io:static/js/socket_led_brick_client.js')}"></script>
     <script src="${request.static_url('led_brick_socket_io:static/js/index.js')}"></script>
-
+  
+    <div id="controls">
+      <div id="up"></div>
+      <br>
+      <div id="left"></div>
+      <div id="right"></div>
+      </br>
+      <div id="down"></div>
+    </div>
   </body>
 </html>
